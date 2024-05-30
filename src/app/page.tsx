@@ -36,20 +36,25 @@ export default function Home() {
               priority
             />
           </div>
-          <div className="absolute bg-[#FFF]/80 h-[75px] rounded-[76px] px-5 inset-0 flex items-center mx-20 mt-10">
+          <div className="absolute bg-[#FFF]/80 h-[75px] rounded-[76px] px-10 inset-0 flex items-center mx-20 mt-10">
             <div className="flex w-full justify-between items-center">
-              <Image
-                src={Logo3}
-                alt="Logo"
-                width={158}
-                height={33.853}
-                className="object-cover mt-2"
-              />
-              <ButtonForm
-                label={"Entre em contato"}
-                variation={"variation2"}
-                className="px-10 cursor-pointer w-auto"
-              />
+              <div>
+                <Image
+                  src={Logo3}
+                  alt="Logo"
+                  width={158}
+                  height={33.853}
+                  className="object-cover mt-1"
+                />
+              </div>
+              <div>
+                {" "}
+                <ButtonForm
+                  label={"Entre em contato"}
+                  variation={"variation2"}
+                  className="px-10"
+                />
+              </div>
             </div>
           </div>
 
@@ -160,7 +165,7 @@ export default function Home() {
             <Image
               className="object-cover absolute rounded-[50px]"
               fill
-              src="/images/mascara.png"
+              src="/images/backgroundMascara.png"
               alt="backgroundAuth"
               quality={100}
               priority
