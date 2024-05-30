@@ -7,7 +7,7 @@ const workSans = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Legna",
-  description: "Painel Administrador - Dashboard",
+  description: "Lading Page",
 };
 
 export default function RootLayout({

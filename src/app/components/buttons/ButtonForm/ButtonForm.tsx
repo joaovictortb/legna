@@ -16,16 +16,18 @@ const ButtonForm: React.FC<ButtonFormProps> = ({
   onClick,
 }) => {
   const baseClasses =
-    "w-[207px] gap-3 justify-center font-medium text-lg items-center h-[50px] flex rounded-full cursor-pointer";
+    "w-full gap-3 justify-center font-medium text-base items-center h-[50px] flex rounded-full cursor-pointer";
   const variationClasses =
     variation === "variation1"
       ? "text-[#727488] border-2 border-[#727488]"
-      : "bg-legna-500 text-white";
+      : "bg-legna-500 text-white cursor-pointer";
 
   if (href) {
     return (
       <Link onClick={onClick} href={href}>
-        <div className={`${baseClasses} ${variationClasses} ${className}`}>
+        <div
+          className={`${baseClasses} ${variationClasses} ${className} cursor-pointer`}
+        >
           {label}
         </div>
       </Link>
@@ -36,7 +38,7 @@ const ButtonForm: React.FC<ButtonFormProps> = ({
     <button
       onClick={onClick}
       type="submit"
-      className={`${baseClasses} ${variationClasses} ${className}`}
+      className={`${baseClasses} ${variationClasses} ${className} cursor-pointer`}
     >
       {label}
     </button>
